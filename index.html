@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	  <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+	    <h1 id="title">Learning App Survey Form</h1>
+      <title>Survey form</title>
+      <p id="description">Thank you for taking the time to help us improve the platform
+      </p>
+      <div class="form-class">
+      <form id="survey-form">
+	  <div class="rad">
+       <label id="name-label" for="name">Name 
+         <input type="text" id="name" required name="name" placeholder="Enter your name">
+       </label>
+	   </div>
+	   <div class="rad">
+       <label id="email-label" for="email">Email
+         <input type="email" id="email" required name="email" placeholder="Enter your Email">
+        </label>
+        </div>
+       <div class="rad">
+       <label id="number-label" for="number">Age
+       <input id="number" type="number" pattern="[0-9]" min="13" max="50" name="number" placeholder="Age">
+       </label>
+	   </div>
+	   <div class="rad">
+       <label for="dropdown">Which option best describes your current role?
+       <select id="dropdown">
+    <option>Select current role</option>
+    <option>Student</option>
+    <option>Full Time Job</option>
+    <option>Full Time Learner</option>
+    <option>Prefer not to say</option>
+    <option>Other</option>
+    </select>
+  </label>
+  </div>
+  <div class="rad">
+  <label>Would you recommend this portal to a friend?</label>
+    <label for="definitely" ><input class="inline" id="definitely" type="radio" name="radio-button" value="0">Definitely
+    </label>
+     <label for="Maybe"><input class="inline" id="Maybe" type="radio" name="radio-button" value="1">Maybe
+    </label>
+     <label for="Notsure"><input class="inline" id="Notsure" type="radio" name="radio-button" value="2">Not sure
+    </label>
+	</div>
+	<div class="rad">
+    <label>What would you like to see improved? (Check all that apply)
+      </label>
+      <label for="feedback1">
+      <input type="checkbox" class="inline" id="feedback1" value="0">Fron-end projects
+      
+      </label>
+      <label for="feedback2">
+      <input type="checkbox" class="inline" id="feedback2" value="1">Back-end projects  
+      </label>
+      <label for="feedback3">
+      <input type="checkbox" class="inline" id="feedback3" value="2">Videos  
+      </label>
+	  </div>
+	  <div class="rad">
+      <label for="comments">Any comments or suggestions?
+      <textarea id="comments" rows="7" cols="50" placeholder="Enter your comments here..."></textarea >
+      </label>
+    </div>
+     <input id="submit" type="submit" value="Submit">
+        </form>
+		</div>
+		</body>
+  </html>
+
+
